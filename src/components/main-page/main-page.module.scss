@@ -3,3 +3,20 @@
   grid-template-rows: min-content 1fr min-content;
   height: 100vh;
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inner_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 768px;
+  max-width: 1200px;
+  padding: 0 15px;
+}

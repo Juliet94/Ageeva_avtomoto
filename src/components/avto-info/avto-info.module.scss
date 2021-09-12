@@ -1,14 +1,10 @@
-.info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .wrapper {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .heading {
@@ -29,42 +25,58 @@
 }
 
 .gas {
-  
+
   &::before {
     content: '';
     position: absolute;
     width: 40px;
     height: 40px;
+    background-image: url('../../assets/images/icon-gas-station.svg');
+    background-repeat: no-repeat;
+    top: -30px;
+    left: 15px;
     }
 }
 
 .transmission {
-  
+
   &::before {
     content: '';
     position: absolute;
     width: 40px;
     height: 40px;
+    background-image: url('../../assets/images/icon-transmission.svg');
+    background-repeat: no-repeat;
+    top: -30px;
+    left: 15px;
     }
 }
 
 .power {
-  
+
   &::before {
     content: '';
     position: absolute;
     width: 40px;
     height: 40px;
+    background-image: url('../../assets/images/icon-horse.svg');
+    background-repeat: no-repeat;
+    top: -30px;
+    left: 15px;
     }
 }
 
 .engine {
-  
+
   &::before {
     content: '';
     position: absolute;
     width: 40px;
     height: 40px;
+    background-image: url('../../assets/images/icon-engine.svg');
+    background-repeat: no-repeat;
+    top: -30px;
+    left: 15px;
     }
 }
 
@@ -82,14 +94,15 @@
   font-size: 20px;
   opacity: 0.5;
   position: relative;
-  
+
   &::before {
     content: '';
     position: absolute;
-    width: 1px;
-    height: 123px;
+    width: 100px;
+    height: 1px;
     background-color: #a3a4a6;
-    transform: rotate(15deg);
+    transform: rotate(-5deg);
+    top: 10px;
   }
 }
 

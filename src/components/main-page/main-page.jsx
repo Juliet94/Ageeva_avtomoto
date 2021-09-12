@@ -9,11 +9,15 @@ function MainPage() {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <main>
-        <h1 className="visually-hidden">
-          Информация о автомобиле Марпех 11
-        </h1>
-        <AvtoInfo />
+      <main className={styles.main}>
+        <div className={styles.inner_wrapper}>
+          <h1 className="visually-hidden">
+            Информация о автомобиле Марпех 11
+          </h1>
+          <section>
+            <AvtoInfo />
+          </section>
+        </div>
       </main>
       <Footer />
     </div>
