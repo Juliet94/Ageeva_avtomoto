@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.wrapper}>
-        <nav>
+        <nav className={styles.nav}>
           <ul className={styles.list}>
             <li className={styles.list_item}>
               <a href="/">
@@ -45,7 +45,7 @@ function Footer() {
           </ul>
         </nav>
       </div>
-    </footer>  
+    </footer>
   );
 }
 
