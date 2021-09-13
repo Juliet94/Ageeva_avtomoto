@@ -15,7 +15,7 @@ function MainPage() {
           <h1 className="visually-hidden">
             Информация об автомобиле Марпех 11
           </h1>
-          <section>
+          <section className={styles.info}>
             <Slider />
             <AvtoInfo />
           </section>

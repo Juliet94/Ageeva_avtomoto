@@ -28,7 +28,7 @@ function AvtoInfo() {
           2&nbsp;300&nbsp;000&nbsp;₽
         </span>
         <span className={styles.old_price}>
-          2&nbsp;400&nbsp;000&nbsp;₽
+          2&nbsp;&nbsp;400&nbsp;000&nbsp;₽
         </span>
       </div>
       <a className={classNames(styles.link, styles.submit_application)} href="/">

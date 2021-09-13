@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -10,6 +10,9 @@
 .heading {
   font-size: 30px;
   font-weight: 700;
+  margin-top: -11px;
+  margin-left: 3px;
+  margin-bottom: 50px;
 }
 
 .list {
@@ -17,10 +20,12 @@
   flex-wrap: wrap;
   font-weight: 400;
   opacity: 0.5;
+  margin-left: 10px;
+  margin-bottom: 42px;
 }
 
 .list_item {
-  margin-right: 10px;
+  margin-right: 14px;
   position: relative;
 }
 
@@ -33,8 +38,8 @@
     height: 40px;
     background-image: url('../../assets/images/icon-gas-station.svg');
     background-repeat: no-repeat;
-    top: -30px;
-    left: 15px;
+    top: -32px;
+    left: 17px;
     }
 }
 
@@ -47,12 +52,13 @@
     height: 40px;
     background-image: url('../../assets/images/icon-transmission.svg');
     background-repeat: no-repeat;
-    top: -30px;
-    left: 15px;
+    top: -35px;
+    left: 25px;
     }
 }
 
 .power {
+  margin-right: 29px;
 
   &::before {
     content: '';
@@ -61,8 +67,8 @@
     height: 40px;
     background-image: url('../../assets/images/icon-horse.svg');
     background-repeat: no-repeat;
-    top: -30px;
-    left: 15px;
+    top: -34px;
+    left: 10px;
     }
 }
 
@@ -75,19 +81,23 @@
     height: 40px;
     background-image: url('../../assets/images/icon-engine.svg');
     background-repeat: no-repeat;
-    top: -30px;
-    left: 15px;
+    top: -35px;
+    left: 5px;
     }
 }
 
 .price {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin-left: 3px;
+  margin-bottom: 41px;
 }
 
 .current_price {
   font-size: 35px;
   font-weight: 700;
+  margin-right: 33px;
 }
 
 .old_price {
@@ -109,19 +119,32 @@
 .link {
   display: block;
   min-height: 52px;
-  padding: 16px 20px;
+  padding: 19px 19px 10px;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: background-color 0.3s ease-out,
+              color 0.3s ease-out;
 }
 
 .submit_application {
   background-color: #d12136;
   color: #ffffff;
+  margin-bottom: 16px;
+
+  &:hover {
+    background-color: #bd0c21;
+  }
 }
 
 .credit {
   color: #d12136;
   background-color: #ffffff;
   border: 1px solid #d12136;
+
+  &:hover {
+    background-color: #d12136;
+    color: #ffffff;
+  }
 }

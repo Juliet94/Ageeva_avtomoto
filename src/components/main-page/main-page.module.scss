@@ -7,22 +7,24 @@
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+  padding: 90px 0;
 }
 
 .inner_wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
   min-width: 768px;
-  max-width: 1200px;
+  max-width: 1215px;
   padding: 0 15px;
 }
 
 .info {
+  width: 100%;
   display: grid;
-  grid-column-gap: 20px;
-  grid-template-columns: 50% 50%;
+  grid-column-gap: 51px;
+  grid-template-columns: 51% 49%;
 }
