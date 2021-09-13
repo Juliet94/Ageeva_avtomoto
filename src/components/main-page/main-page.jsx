@@ -4,6 +4,7 @@ import styles from './main-page.module.scss';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 import AvtoInfo from '../avto-info/avto-info';
+import Slider from '../slider/slider';
 
 function MainPage() {
   return (
@@ -12,9 +13,10 @@ function MainPage() {
       <main className={styles.main}>
         <div className={styles.inner_wrapper}>
           <h1 className="visually-hidden">
-            Информация о автомобиле Марпех 11
+            Информация об автомобиле Марпех 11
           </h1>
           <section>
+            <Slider />
             <AvtoInfo />
           </section>
         </div>

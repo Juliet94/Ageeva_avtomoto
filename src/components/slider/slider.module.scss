@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inner_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button {
+  border: 1px solid #d7d9df;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 52px;
+  min-height: 52px;
+}
+
+.img_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 434px;
+}
