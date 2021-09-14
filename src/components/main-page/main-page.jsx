@@ -5,6 +5,7 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import AvtoInfo from '../avto-info/avto-info';
 import Slider from '../slider/slider';
+import Tabs from '../tabs/tabs';
 
 function MainPage() {
   return (
@@ -18,6 +19,9 @@ function MainPage() {
           <section className={styles.info}>
             <Slider />
             <AvtoInfo />
+          </section>
+          <section>
+            <Tabs />
           </section>
         </div>
       </main>

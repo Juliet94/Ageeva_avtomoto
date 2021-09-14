@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 11px;
+}
+
+.inner_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a212f;
+  margin-bottom: 10px;
+}
+
+.address_heading {
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  font-style: normal;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+
+.address {
+  line-height: 1.3;
+}
+
+.map {
+  padding-top: 20px;
+  margin-left: 100px;
+  width: 431px;
+  height: 291px;
+}

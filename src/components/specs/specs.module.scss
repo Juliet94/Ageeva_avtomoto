@@ -1,0 +1,24 @@
+.table {
+  border-collapse: collapse;
+  min-width: 500px;
+  width: 97%;
+  margin-top: 9px;
+}
+
+.row {
+  height: 50px;
+  border-bottom: 1px solid #d7d9df;
+}
+
+.cell {
+  vertical-align: bottom;
+  padding-bottom: 9px;
+}
+
+.left_cell {
+  text-align: left;
+}
+
+.right_cell {
+  text-align: right;
+}
