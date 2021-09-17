@@ -13,6 +13,10 @@
   margin-top: -11px;
   margin-left: 3px;
   margin-bottom: 50px;
+
+  @media (max-width: 1200px) {
+    margin-top: 20px;
+  }
 }
 
 .list {
