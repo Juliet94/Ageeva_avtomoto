@@ -32,10 +32,18 @@
   justify-content: space-between;
 }
 
-.list_item:not(:last-child) {
-  margin-right: 66px;
+.list_item {
+  transition: opacity 0.3s ease-out;
 
-  @media (max-width: 1200px) {
-    margin-right: 10px;
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:not(:last-child) {
+    margin-right: 66px;
+
+    @media (max-width: 1200px) {
+      margin-right: 10px;
+    }
   }
 }

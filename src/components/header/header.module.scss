@@ -29,6 +29,14 @@
   flex-direction: row;
 }
 
-.list_item:not(:last-child) {
-  margin-right: 70px;
+.list_item {
+  transition: opacity 0.3s ease-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:not(:last-child) {
+    margin-right: 70px;
+  }
 }
