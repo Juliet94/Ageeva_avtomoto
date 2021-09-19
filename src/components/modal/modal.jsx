@@ -46,17 +46,14 @@ function Modal({isModalActive, setIsModalActive}) {
       time: DEFAULT_TIME,
     }));
 
-    setName('');
-    setPositive('');
-    setNegative('');
-    setComment('');
-    setRating(0);
+    localStorage.clear();
     setIsModalActive(false);
   };
 
   return (
     <ReactModal
       className={styles.modal}
+      overlayClassName={styles.overlay}
       isOpen={isModalActive}
       shouldCloseOnOverlayClick
       shouldCloseOnEsc
@@ -116,6 +113,7 @@ function Modal({isModalActive, setIsModalActive}) {
               />
             </div>
             <label className={styles.label}>
+              {!isCommentInputed && <span className={styles.required}> Пожалуйста, заполните поле </span>}
               <textarea
                 className={classNames(styles.comment, {[styles.error]: !isCommentInputed})}
                 cols="33"

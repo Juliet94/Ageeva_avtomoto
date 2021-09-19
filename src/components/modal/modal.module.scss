@@ -3,14 +3,26 @@
   height: 415px;
   background-color: #f5f5f9;
   position: absolute;
-  top: 25%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
   padding: 15px 35px 35px;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  background-color: rgba(88, 87, 87, 0.6);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .heading {
   text-align: center;
   margin-bottom: 48px;
+  margin-left: -2px;
 }
 
 .form {
@@ -57,6 +69,7 @@
   height: 50px;
   border: 1px solid rgba(72, 73, 77, 0.2);
   padding: 10px 25px;
+  margin-bottom: 2px;
 }
 
 .label_name {
@@ -78,8 +91,11 @@
   position: relative;
   border: 1px solid rgba(72, 73, 77, 0.2);
   font-family: 'Open-Sans', Arial, sans-serif;
-  padding: 15px 20px;
+  padding: 17px 10px 17px 25px;
   line-height: 1.3;
+  width: 300px;
+  height: 118px;
+  font-size: 14px;
 
   &::before {
     content: '';
@@ -129,7 +145,7 @@
   min-width: 190px;
   min-height: 52px;
   text-align: center;
-  padding: 10px 5px 5px;
+  padding: 5px 5px 5px;
   transition: backgound-color 0.3s ease-out;
   align-self: center;
   font-family: 'Open-Sans', Arial, sans-serif;
