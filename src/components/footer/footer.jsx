@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './footer.module.scss';
 
 function Footer() {
@@ -8,39 +9,39 @@ function Footer() {
         <nav className={styles.nav}>
           <ul className={styles.list}>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Корпоративным клиентам
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Клиентам
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Аренда авто
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Каршеринг
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Как продать авто
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Trade-in
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Test drive
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

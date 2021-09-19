@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './header.module.scss';
 
 import Logo from '../logo/logo';
@@ -11,24 +12,24 @@ function Header() {
         <nav className={styles.nav}>
           <ul className={styles.list}>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Автомобили
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Контакты
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Услуги
-              </a>
+              </Link>
             </li>
             <li className={styles.list_item}>
-              <a href="/">
+              <Link to="/">
                 Вакансии
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

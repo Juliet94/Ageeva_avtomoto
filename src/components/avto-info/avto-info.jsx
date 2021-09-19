@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './avto-info.module.scss';
 
 import classNames from 'classnames';
@@ -31,12 +32,12 @@ function AvtoInfo() {
           2&nbsp;&nbsp;400&nbsp;000&nbsp;₽
         </span>
       </div>
-      <a className={classNames(styles.link, styles.submit_application)} href="/">
+      <Link className={classNames(styles.link, styles.submit_application)} to="/">
         Оставить заявку
-      </a>
-      <a className={classNames(styles.link, styles.credit)} href="/">
+      </Link>
+      <Link className={classNames(styles.link, styles.credit)} to="/">
         В кредит от 11&nbsp;000&nbsp;₽
-      </a>
+      </Link>
     </div>
   );
 }

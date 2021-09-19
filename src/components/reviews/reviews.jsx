@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import styles from './reviews.module.scss';
 import {useSelector} from 'react-redux';
 import {getReviews} from '../../store/selectors';
@@ -20,9 +21,9 @@ function Reviews() {
       <h2 className="visually-hidden">
         Отзывы
       </h2>
-      <a className={styles.link} href="/" onClick={onLeaveReviewButtonClick}>
+      <Link className={styles.link} to="/" onClick={onLeaveReviewButtonClick}>
         Оставить отзыв
-      </a>
+      </Link>
       <ul className={styles.list}>
         {reviews.map((reviewItem) => (
           <ReviewItem key={reviewItem.id} {...reviewItem} />

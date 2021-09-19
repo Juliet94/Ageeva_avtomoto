@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import StarRatings from 'react-star-ratings';
 import classNames from 'classnames';
@@ -45,9 +46,9 @@ function ReviewItem({name, positive, negative, comment, rating, time}) {
         <span className={styles.time}>
           {time}
         </span>
-        <a className={styles.link} href="/">
+        <Link className={styles.link} to="/">
           Ответить
-        </a>
+        </Link>
       </div>
     </li>
   );
