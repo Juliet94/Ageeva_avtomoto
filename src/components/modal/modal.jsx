@@ -1,4 +1,5 @@
-import React, {useRef} from 'react';
+/* eslint-disable */
+import React, {useRef, useState} from 'react';
 import {useDispatch} from 'react-redux';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -28,26 +29,34 @@ function Modal({isModalActive, setIsModalActive}) {
   const [comment, setComment] = useLocalStorage(ModalInputs.COMMENT, '');
   const [rating, setRating] = useLocalStorage(ModalInputs.RATING, 0);
 
+  const [isNameInputed, setIsNameInputed] = useState(true);
+  const [isCommentInputed, setIsCommentInputed] = useState(true);
+
   let id = 3;
 
-  const isNameInputed = name.trim().length > 0;
-  const isCommentInputed = comment.trim().length > 0;
+  const nameCheck = name.trim().length > 0;
+  const commentCheck = comment.trim().length > 0;
 
   const onFormSubmit = (evt) => {
     evt.preventDefault();
 
-    dispatch(addReviewItem({
-      id: id++,
-      name,
-      positive,
-      negative,
-      comment,
-      rating,
-      time: DEFAULT_TIME,
-    }));
+    if (nameCheck && commentCheck) {
+      dispatch(addReviewItem({
+        id: id++,
+        name,
+        positive,
+        negative,
+        comment,
+        rating,
+        time: DEFAULT_TIME,
+      }));
 
-    localStorage.clear();
-    setIsModalActive(false);
+      localStorage.clear();
+      setIsModalActive(false);
+    } else {
+      nameCheck ? setIsNameInputed(true) : setIsNameInputed(false);
+      commentCheck ? setIsCommentInputed(true) : setIsCommentInputed(false);
+    }
   };
 
   return (
@@ -128,7 +137,6 @@ function Modal({isModalActive, setIsModalActive}) {
         <button
           className={styles.button_submit}
           type="submit"
-          disabled={!isNameInputed || !isCommentInputed}
         >
           Оставить отзыв
         </button>
