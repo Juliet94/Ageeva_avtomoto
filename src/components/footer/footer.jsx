@@ -20,26 +20,6 @@ function Footer() {
             </li>
             <li className={styles.list_item}>
               <Link to="/">
-                Клиентам
-              </Link>
-            </li>
-            <li className={styles.list_item}>
-              <Link to="/">
-                Клиентам
-              </Link>
-            </li>
-            <li className={styles.list_item}>
-              <Link to="/">
-                Клиентам
-              </Link>
-            </li>
-            <li className={styles.list_item}>
-              <Link to="/">
-                Клиентам
-              </Link>
-            </li>
-            <li className={styles.list_item}>
-              <Link to="/">
                 Аренда авто
               </Link>
             </li>
