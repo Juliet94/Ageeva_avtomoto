@@ -23,6 +23,21 @@ function Header() {
             </li>
             <li className={styles.list_item}>
               <Link to="/">
+                Контакты
+              </Link>
+            </li>
+            <li className={styles.list_item}>
+              <Link to="/">
+                Контакты
+              </Link>
+            </li>
+            <li className={styles.list_item}>
+              <Link to="/">
+                Контакты
+              </Link>
+            </li>
+            <li className={styles.list_item}>
+              <Link to="/">
                 Услуги
               </Link>
             </li>
