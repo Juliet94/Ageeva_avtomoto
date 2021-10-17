@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import styles from './reviews.module.scss';
 import {useSelector} from 'react-redux';
@@ -15,6 +15,16 @@ function Reviews() {
     evt.preventDefault();
     setIsModalActive(true);
   };
+
+  useEffect(() => {
+    if (isModalActive) {
+      document.body.style = 'overflow: hidden; padding-right: 17px';
+    }
+
+    if (!isModalActive) {
+      document.body.style = 'overflow: visible; padding-right: 0';
+    }
+  }, [isModalActive]);
 
   return (
     <div className={styles.wrapper}>
